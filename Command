@@ -1,0 +1,20 @@
+C:\Users\Administrator>cd desktop
+
+C:\Users\Administrator\Desktop>mkdir JR
+
+C:\Users\Administrator\Desktop>cd Jr
+
+C:\Users\Administrator\Desktop\JR>git clone https://github.com/Oyadz/SECplus701
+Cloning into 'SECplus701'...
+remote: Enumerating objects: 408, done.
+remote: Counting objects: 100% (201/201), done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 408 (delta 197), reused 186 (delta 186), pack-reused 207 (from 1)
+Receiving objects: 100% (408/408), 200.25 KiB | 1.42 MiB/s, done.
+Resolving deltas: 100% (237/237), done.
+warning: the following paths have collided (e.g. case-sensitive paths
+on a case-insensitive filesystem) and only one from the same
+colliding group is in the working tree:
+
+  'createWEBSITE.ps1'
+  'createWEBsite.ps1'
