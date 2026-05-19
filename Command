@@ -17,3 +17,5 @@ Resolving deltas: 100% (237/237), done.
 warning: the following paths have collided (e.g. case-sensitive paths
 on a case-insensitive filesystem) and only one from the same
 colliding group is in the working tree:
+
+Day 2 - DNS
