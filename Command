@@ -29,3 +29,10 @@ Remove-Item "IIS:\SslBindings\!443!www.bdo.ph.com" -Force
 iisreset
 
 Sudo su
+
+sudo /opt/lampp/lampp start
+
+sudo systemctl stop apache2
+
+http://192.168.186.___/mutillidae/src/index.php
+
