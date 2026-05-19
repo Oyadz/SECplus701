@@ -1,3 +1,5 @@
+DAY 1 - Physical
+
 C:\Users\Administrator>cd desktop
 
 C:\Users\Administrator\Desktop>mkdir JR
@@ -15,6 +17,3 @@ Resolving deltas: 100% (237/237), done.
 warning: the following paths have collided (e.g. case-sensitive paths
 on a case-insensitive filesystem) and only one from the same
 colliding group is in the working tree:
-
-  'createWEBSITE.ps1'
-  'createWEBsite.ps1'
