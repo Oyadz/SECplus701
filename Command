@@ -19,3 +19,13 @@ on a case-insensitive filesystem) and only one from the same
 colliding group is in the working tree:
 
 Day 2 - DNS
+mmc
+Remove-Item "IIS:\SslBindings\0.0.0.0!443!www.bdo.ph.com"
+
+Remove-WebBinding -Name "bdo.ph.com" -Protocol https -Port 443 -HostHeader "www.bdo.ph.com"
+
+Remove-Item "IIS:\SslBindings\!443!www.bdo.ph.com" -Force
+
+iisreset
+
+Sudo su
