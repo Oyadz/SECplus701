@@ -294,7 +294,7 @@ login on-succes log
 end
 -------------------------------------------------
 conf t
-access-list 100 deny ip any host 208.8.8.111 log
+access-list 100 deny ip any host 208.8.8.136 log
 access-list 100 permit ip any any
 int g1
 ip access-group 100 in
@@ -323,3 +323,12 @@ Permit Any
 Int Gi 1
  ip access-group NOPORN in
 end
+
+ZABBIX
+dnf install net-snmp-utils -y
+
+config t
+access-list 10 permit 208.8.8.138
+snmp-server community RO 10
+sudo systemctl restart zabix-server
+
