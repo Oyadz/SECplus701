@@ -332,3 +332,29 @@ access-list 10 permit 208.8.8.138
 snmp-server community public RO 10
 sudo systemctl restart zabix-server
 
+DAY 4
+AD
+RADIUS
+RADIUS AAA [ shell:priv-lvl=15 ]
+
+!@Cisco
+conf t
+ username admin privilege 15 secret pass
+ aaa new-model
+ radius server WINRAD
+  address ipv4 10.32.1.8 auth-port 1812 acct-port 1813
+  key C1sc0123
+  exit
+ aaa group server radius RADGROUP
+  server name WINRAD
+  exit
+ aaa authentication login default group RADGROUP local
+ aaa authorization exec default group RADGROUP local
+ line vty 0 4
+  login authentication default
+ end
+
+to remove raidius server 
+no aaa new-model
+
+BACK UP
